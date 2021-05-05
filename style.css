@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,400&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	text-decoration:none;
+	
+}
+.container {
+	width:70%; 
+	height:3330px; 
+	background:#89F8F6; 
+	margin:0 auto}
+.inside-container {
+	width:80%;
+	margin:0 auto; 
+}
+.header-section {
+	display:flex;
+	align-items: center;
+	justify-content: space-between; 
+	font-family: "ubuntu", sans-serif;
+	
+	}
+.header-section .logo a{
+	color:#fff; 
+	font-size:30px;}
+.header-section .logo span {color:rgba(193,109,14,1.00)}
+.header-section .menu ul li{
+	display:inline-block; 
+	padding: 20px;
+	}
+.header-section .menu ul li a {color:#fff; font-size:20px; transition: color 0.5 ease}
+.header-section .menu ul li a:hover {color:rgba(193,109,14,1.00)}
+/*Section banner*/
+.banner {
+	background: url("Image/IMG_0519.jpg") no-repeat center; 
+	height:100vh; 	
+}
+.banner .box {/*display:flex; align-items: center; justify-content: flex-start; */
+	font-family: "ubuntu", sans-serif;
+	font-size:50px; 
+	color:rgba(100,95,95,1.00); 
+padding: 90px 0; }
+.banner .box span {
+	color:rgba(193,109,14,1.00); 
+}
+/*About me style*/
+.about-me {height:100vh; background:#fff; color:#4F3435; margin: 20px 0; }
+.about-me .text {font-size:50px; margin: 20px 0; padding-top:30px; }
+.about-me .picture {height:100px; width: 100px;border-radius: 50%; overflow: hidden; margin: 20px 0; animation-name:leap; animation-duration:3s; animation-iteration-count: infinite; position:relative }
+.about-me img {width:800px; height:900px; position:absolute; bottom:-440px; right:-235px; }
+@keyframes leap{
+	0%{transform:translateY(0px)}
+	50%{transform:translateY(-25px)}
+	100%{transform:translateY(0px)}
+}
+.image{width:600px;  }
+.about-me .para {font-size:20px; margin: 30px 0;}
+
+/*Services style*/
+.services {width:100%; height:100vh; margin:0 auto; background:rgba(198,233,237,0.90); }
+.text-4 {color:#4F3435; font-size:50px; text-align:center; }
+.text-4 span {color:#fff; font-size:40px;  }
+.service-list {width:80%; height:300px; margin:35px auto; text-align: center; font-size:20px; display:flex; align-items: center; justify-content:center}
+.service-list .service {width:30%; height:300px; background:rgba(30,4,95,0.6); color:#fff; margin: 5px 10px;}
+.service-list .graphic {width:35%; }
+.web-design {/*text-align: center; font-size:50px;*/ }
+.icon-5 {/*text-align: center;*/ margin: 20px 0; }
+.text-5 {font-size:30px; margin:20px 0; } 
+/*Skill style*/
+.skill{width:100%; height:100vh; background:#fff; margin: 20px 0;  }
+.text-6 {color:rgba(30,4,95,1.00); font-size:50px; text-align:center; margin-top:30px;  }
+.text-6 span {color:#4F3435; font-size:40px;  }
+.skill-content {display:flex; }
+.content-text {width:30%; height:500px;  background:rgba(30,4,95,0.3); margin:5px 5px;color:#fff; /*font-size:30px*/; padding: 30px 20px;   }
+.content-text p {font-size:20px; margin-top:30px;  }
+.content-text span {color: rgba(30,4,95,1.00); font-weight: 800 ; }
+.content-bar {width:65%; height:500px;  background:rgba(30,4,95,0.3); margin:5px 5px;   }
+/*Skill style*/
+.content-bar {padding: 80px 0px; }
+.bar-wrapper {width:100%; height: 60px; position:relative; margin: 10px ; }
+.bar-wrapper p {color:#fff; font-size:20px; }
+.base-bar {width:70%; height:30px; background:#A99B9C;position:absolute; left:105px; top:0px;   }
+.bar-html {width:90%; height:30px; background:rgba(30,4,95,1.00); position:absolute; left:0px; animation-name:move-html; animation-duration:10s; animation-iteration-count: 1  }
+@keyframes move-html{
+	0%{width:0%; background:#A99B9C}
+	20% {width:10%; background:#A99B9C}
+	100%{width:90%; background:rgba(30,4,95,1.00)}
+}
+.bar-web {width:85%; height:30px; background:rgba(30,4,95,1.00); position:absolute; left:0px; animation-name:move-web; animation-duration:10s; animation-iteration-count: 1  }
+@keyframes move-web{
+	0%{width:0%; background:#A99B9C}
+	20% {width:10%; background:#A99B9C}
+	100%{width:85%; background:rgba(30,4,95,1.00)}
+}
+
+.bar-photo {width:75%; height:30px; background:rgba(30,4,95,1.00); position:absolute; left:0px; animation-name:move-web; animation-duration:10s; animation-iteration-count: 1  }
+@keyframes move-web{
+	0%{width:0%; background:#A99B9C}
+	20% {width:10%; background:#A99B9C}
+	100%{width:75%; background:rgba(30,4,95,1.00)}
+}
+
+.bar-illus {width:70%; height:30px; background:rgba(30,4,95,1.00); position:absolute; left:0px; animation-name:move-web; animation-duration:10s; animation-iteration-count: 1  }
+@keyframes move-web{
+	0%{width:0%; background:#A99B9C}
+	20% {width:10%; background:#A99B9C}
+	100%{width:70%; background:rgba(30,4,95,1.00)}
+}
+/*contact style*/
+.contact {width:100%; height:100vh; background:rgba(198,233,237,0.90)}
+.contact-tittle {text-align: center; color:#fff; padding-top:30px; font-size:50px}
+.contact-tittle span {font-size:30px}
+.contact-content {color:#fff; font-size:20px; margin-top:30px; line-height: 2em;  }
+/*footer style*/
+.footer {width:100%; height:50px; /*background:rgba(198,233,237,0.20)*/;/* background:#EF3E41*/; /*position:relative;*/ overflow: hidden; }
+	
+	
+.footer-text {color:rgba(193,109,14,1.00); padding:15px 0px; /*width: 70%;*/ /*background: green;*/ /*position:absolute; left:0px;*/ 
+	animation-name:straigh-move; animation-duration:10s; animation-iteration-count: infinite;}
+@keyframes straigh-move{
+	0%{transform:translateX(0px)}
+		100%{transform:translateX(800px)}
+}
+
+
+
